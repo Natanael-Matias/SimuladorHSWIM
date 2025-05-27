@@ -1,0 +1,9 @@
+.settings/
+*.mk
+*.list
+*.cyclo
+*.d
+*.o
+*.su
+*makefile
+*.prefs
