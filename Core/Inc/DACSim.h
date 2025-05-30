@@ -13,16 +13,19 @@
 
 /*****************************************************************************/
 
-#define NUMDAC			6
-#define TAMANHO_ARRAY 	3586
-#define CHANNEL_1		DAC_CHANNEL_1
-#define CHANNEL_2		DAC_CHANNEL_2
-#define CHANNEL_3		DAC_CHANNEL_1
-#define CHANNEL_4		DAC_CHANNEL_1
-#define CHANNEL_5		DAC_CHANNEL_2
-#define CHANNEL_6		DAC_CHANNEL_1
-#define CHANNEL_7		DAC_CHANNEL_2
-#define ALIGN12R		DAC_ALIGN_12B_R
+#define NUMDAC				6
+#define TAMANHO_ARRAY_3C 	3586
+#define TAMANHO_ARRAY_2S3 	4833
+#define TAMANHO_ARRAY_3S3 	5024
+#define TAMANHO_ARRAY_4T3 	6080
+#define CHANNEL_1			DAC_CHANNEL_1
+#define CHANNEL_2			DAC_CHANNEL_2
+#define CHANNEL_3			DAC_CHANNEL_1
+#define CHANNEL_4			DAC_CHANNEL_1
+#define CHANNEL_5			DAC_CHANNEL_2
+#define CHANNEL_6			DAC_CHANNEL_1
+#define CHANNEL_7			DAC_CHANNEL_2
+#define ALIGN12R			DAC_ALIGN_12B_R
 
 #define WDT_PRESCALER	1
 #define WDT_RELOAD		999
@@ -57,6 +60,7 @@ typedef struct{
 	DAC_HandleTypeDef 	*pDAC;
 	uint32_t 			channel;
 	const uint32_t		*pDATA;
+	uint32_t			arrayLength;
 }ArrayDac_TypeDef;
 
 
